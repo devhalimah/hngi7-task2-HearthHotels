@@ -1,4 +1,89 @@
 
-body {background-color: #302b26;
-font-family: sans-serif;
 
+#middle {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    text-align: center;
+    font-weight: 1500;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#sleep {
+    color: goldenrod;
+    font-size: medium;
+    font-weight: 600;
+}
+
+#single {
+    color: rgb(143, 19, 19);
+    font-style: italic;
+}
+
+
+#dent {
+    background-image: url(images/selective-focus-photo-of-reception-signage-3768095.jpg); 
+    background-size: 1350px 600px;
+    background-repeat: no-repeat;
+    filter: blur(0.2px);
+    margin-top: 5px;
+    color:  rgb(247, 242, 242);
+    text-align: center;
+    font-weight: 150px;
+    font-size: large;
+    font-family: 'Times New Roman';
+   padding-top : 1px;
+}
+
+#dent h1 {
+    color:  rgb(196, 86, 23);
+
+}
+
+#dawn {
+   color: #000;
+}
+
+#cheese {
+    background-color: brown;
+    background-size: cover;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+#all h1 {
+    color: #ff4500;
+}
+
+
+
+#same {
+    margin-right: 10px;
+}
+
+#halihelp {
+    margin-top: 50px;
+   text-align: center;
+   font-weight: 700;
+   font-size: medium;
+}
+
+#halihelp h2 {
+    color: rgb(143, 19, 19);
+    text-align: center;
+}
+
+#reduce {
+    padding-top: 50px;
+    font-size: large;
+    font-weight: 500;
+}
+
+#true {
+    padding: 50px, 50px, 50px, 50px;
+    border-color: #fff;
+    margin-left: 10px;
+}
