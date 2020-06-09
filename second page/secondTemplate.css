@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+/*styling for the body tag from line 5
+to line 13*/
+body {
+    margin: 0px auto 0px auto;
+   width: 70%;
+   height: 80%;
+   position: relative;
+   border-radius: 0px 0px 10px 10px;
+   box-shadow: 10px 10px 70px rgba(27, 26, 26, 0.685);
+}
+/*styling of the main tag and all elements in it
+from line 16 to 27*/
+main {
+    display: inline-block;
+    position: absolute;
+    margin-left: 30px;
+    margin-right: 300px;
+ }
+ p.first {
+    margin-right: 50px;
+}
+h1 {
+    font-weight: 200;
+}
+/*styling of the header tag and all elemens
+in it from line 29 to line 83*/
+header {
+    margin-left: 707px;
+    display: inline-block;
+    width: 250px;
+    background-color: #1a1919f6;
+    height: 590px;
+    background-image: url('picture2.jfif');
+}
+nav h2 {
+    font-size: 30px;
+    margin-bottom: -30px;
+}
+
+nav a, h2, nav p  {
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    padding: 10px 100px 10px 30px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+span {
+    margin-left: 30px;
+    color: white;
+}
+nav div {margin-top: 30px;}
+p {
+    color: rgba(82, 79, 79, 0.685);
+}
+input {
+    margin-top: 30px;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border: 0.1px solid white;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+div.two {
+    margin-top: 20px;
+    margin-left: 650px;
+    padding-left: 5px;
+    color: whitesmoke;
+    background-color: rgba(3, 48, 248, 0.603);
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(57, 57, 180);
+    border-radius: 4px;
+}
+p.last {
+    margin-right: -80px;
+    letter-spacing: 0px;;
+}
