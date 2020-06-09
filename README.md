@@ -12,5 +12,4 @@ All you have to do is Fork this repo page.
 And type in the command git push
 • Create a pull request on GitHub
 
-
 PLEASE ENSURE YOU'RE PUSHING TO THE WORKING BRANCH AND NOT MASTER BRANCH!!!

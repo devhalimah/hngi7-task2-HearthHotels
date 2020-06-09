@@ -1,0 +1,344 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  font-weight: 500;
+  background-color: rgb(59, 56, 56);
+  color: #f0eaea;
+}
+header{
+  background-image: url("../img/white-and-black-mattress-fronting-the-mountain-775219.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: -40px;
+  height: 85vh;
+  width: 100%;
+}
+nav{
+  width: 85%;
+  height: 80px;
+  line-height: 70px;
+  display: block;
+  z-index: 900;
+  position: relative;
+  font-weight: 600;
+  font-size: 20px;
+  background-color:  rgb(59, 56, 56);
+  transition: all 0.5s ease;
+}
+nav span.Title{
+margin: 0 0 0 15px;
+font-size: 30px;
+letter-spacing: 2px;
+}
+nav span.color{
+  color: rgb(236, 176, 10);
+} 
+nav ul{
+  display: block;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+nav .headerBars{
+  display: none;
+}
+nav ul li{
+  display: inline-block;
+  margin: 0 10px;
+  padding: 5px;
+  position: relative;
+}
+nav ul li a{
+  color: rgb(252, 252, 252);
+  text-decoration: none;
+}
+nav ul li a.active::before{
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  content: "";
+  width: 35px;
+  height:5px;
+  background-color: orange;
+}
+nav ul li a:hover::before{
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  content: "";
+  width: 0;
+  height:5px;
+  background-color: orange;
+  animation: textEffect 0.5s ease forwards alternate;
+}
+@keyframes textEffect {
+  from{
+    width: 20px;
+    left: 30px;
+  }
+  to{
+    width: 100%;
+    left: 0;
+  }
+}
+/*-----Social-icon---*/
+.social-icon{
+  width: 50px;
+  height: 180px;
+  float: right;
+  margin: 10px 15px;
+  background-color: rgb(245, 192, 93);
+  text-align: center;
+  font-size: 22px;
+  padding: 15px 0 0 0;
+}
+.social-icon a{
+  display: block;
+  margin: 20px 0;
+  color: rgb(90, 88, 88);
+}
+/*------txt-content---*/
+header .txtContent{
+  position: relative;
+  top: 30%;
+  margin:0 50px;
+  padding: 20px;
+  text-transform: capitalize;
+  width: 50%;
+  font-size: 30px;
+  font-weight: 600;
+  background-color: rgba(59, 56, 56, 0.404);
+}
+/*--header footer--*/
+header .headerFooter{
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  padding:0 15px;
+  background-color: rgba(59, 56, 56, 0.5);
+}
+header .headerFooter span{
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0 20px;
+  padding: 18px;
+}
+header .headerFooter span.guest::before{
+  position: absolute;
+  top: 0;
+  left: -25px;
+  content: "";
+  height: 100%;
+  border-left: 2px solid rgb(245, 192, 93);
+  padding-left: 10px;
+}
+header .headerFooter span.guest::after{
+  position: relative;
+  top: 0;
+  left: 115%;
+  content: "";
+  height: 100%;
+  width: 100%;
+ background-color: rgb(245, 192, 93);
+}
+
+/*------footer-----*/
+footer{
+width: 100%;
+background-color: rgb(245, 192, 93);
+padding: 15px;
+color: #000;
+font-weight: 600;
+}
+footer .footer{
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  margin:0 auto;
+
+}
+footer .footer h4{
+  font-weight: 700;
+  font-size: 20px;
+}
+footer .footer div{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  margin:20px 15px;
+}
+/*-------footer-form----*/
+footer .footer div.footer-one .col-two form{
+margin: 0;
+padding: 0;
+}
+footer .footer div.footer-one .col-two form .emailContainer{
+width: 30vw;
+height: 35px;
+display: flex;
+margin-top: 10px;
+}
+footer .footer div.footer-one .col-two form .emailContainer input{
+  width: 100%;
+  height: 100%;
+  padding:3px 15px 0;
+  font-size: 17px;
+  outline: 0;
+  border: none;
+}
+footer .footer div.footer-one .col-two form .emailContainer button{
+width: 70%;
+background-color: rgb(37, 36, 36);
+color: #eeeaea;
+margin-left: 5px;
+outline: none;
+border: none;
+cursor: pointer;
+}
+footer .footer div .col-two{
+  float: right;
+}
+
+footer .footer div span{
+  display: inline-block;
+  margin: 12px 15px;
+  line-height: 2;
+}
+footer .footer div.footer-two span a{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s linear;
+}
+footer .footer div.footer-two span a:hover{
+  text-decoration: underline;
+  color: rgb(241, 228, 228);
+}
+@media screen and (max-width: 900px){
+  nav{
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  nav ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    width: 0;
+    height: 100%;
+    transform: translateX(-500px);
+    background-color:  rgb(59, 56, 56);
+    transition: all 0.5s ease;
+  
+  }
+  nav ul.active{
+    animation: slide 0.5s ease forwards alternate;
+  }
+  @keyframes slide {
+    from{
+      opacity: 0;
+      width: 0;
+      transform: translateX(-500px);
+    }
+    to{
+      opacity: 1;
+      width: 85%;
+      transform: translateX(0);
+    }
+  }
+  nav ul li{
+    display: block;
+  }
+  nav .headerBars{
+    position: relative;
+    top:25px;
+    float: right;
+    display: block;
+  }
+  nav .headerBars.active span {
+  position: fixed;
+  right: 0;
+  background-color: red;
+  z-index: 100;
+  -webkit-transform: rotate(50deg) translateX(10px);
+          transform: rotate(50deg) translateX(10px);
+  width: 20px;
+  z-index: 1000;
+}
+
+nav .headerBars.active span:before {
+  display: none;
+}
+
+nav .headerBars.active span:after {
+  position: fixed;
+  right: 0;
+  width: 20px;
+  -webkit-transform: rotate(80deg) translateX(-15px) translateY(-2px);
+          transform: rotate(80deg) translateX(-15px) translateY(-2px);
+  background-color: red;
+  z-index: 1000;
+}
+
+nav .headerBars span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 15px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 25px;
+}
+
+nav .headerBars span:before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 8px 0;
+  border-radius: 25px;
+  z-index: 1000;
+}
+nav .headerBars span:after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 4px;
+  background-color: white;
+  margin: 15px 0;
+  border-radius: 25px;
+}
+header .txtContent{
+  font-size: 25px;
+  transition: all 0.3s ease;
+  margin: auto;
+}
+.social-icon{
+  display: none;
+  transition: all 0.5s ease;
+}
+footer .footer div.footer-one .col-two form .emailContainer{
+  width: 100%;
+}
+}
