@@ -1,127 +1,191 @@
-navbar {
-    padding-top: 10px;
-    padding-bottom: 10px;
+body {
+  margin: 0px;
 }
 
-
-#navbar a:hover {
-    color:  rgb(143, 19, 19);
-
-}
-
-#middle {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: x-large;
-    text-align: center;
-    font-weight: 1500;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-#sleep {
-    color: goldenrod;
-    font-size: medium;
-    font-weight: 600;
-}
-
-#single {
-    color: rgb(143, 19, 19);
-    font-style: italic;
-}
-
-/* .jumbotron p {
-    color: #fff;
-    font-size: medium;
-    font-weight: 600;
-} */
-
-#dent {
-    background-image: url(images/selective-focus-photo-of-reception-signage-3768095.jpg); 
-    background-size: 1350px 600px;
-    background-repeat: no-repeat;
-    filter: blur(0.2px);
-    margin-top: 5px;
-    color:  rgb(247, 242, 242);
-    text-align: center;
-    font-weight: 150px;
-    font-size: large;
-    font-family: 'Times New Roman';
-   padding-top : 1px;
-}
-
-#dent h1 {
-    color:  rgb(196, 86, 23);
-
-}
-
-#dawn {
-   color: #000;
-}
-
-#cheese {
-    background-color: brown;
-    background-size: cover;
-    color: white;
-    padding-top: 100px;
-    padding-bottom: 40px;
-    background-color: #fff;
-    margin-top: 50px;
-}
-
-#all h1 {
-    color: #ff4500;
-}
-
-
-
-#same {
-    margin-right: 10px;
-}
-
-#halihelp {
-    margin-top: 50px;
-   text-align: center;
-   font-weight: 700;
-   font-size: medium;
-}
-
-#halihelp h2 {
-    color: rgb(143, 19, 19);
-    text-align: center;
-}
-
-#reduce {
-    padding-top: 50px;
-    font-size: large;
-    font-weight: 500;
-}
-
-#true {
-    padding: 50px, 50px, 50px, 50px;
-    border-color: #fff;
-    margin-left: 10px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 footer {
-    padding: 100px;
-    background-color: white;
-    color: rgb(138, 94, 94);;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: small;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 60px;
+  background-color: #eab058;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  height: 433px;
 }
 
-footer h3 {
-    color: black;
-    font-family: 'Times New Roman';
-    font-size: medium;
-    text-transform: uppercase;
+.left-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.right-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-footer a {
-    color: black;
-    text-decoration: underline;
+.email-wrap {
+  align-self: center;
 }
 
-footer a:hover {
-    color: brown;
+.email-wrap label {
+  font-weight: bold;
+  display: inline-block;
+  font-size: 15px;
+  padding-bottom: 10px;
 }
+
+.email-wrap input {
+  padding: 5px 20px;
+  font-size: 10px;
+  outline: none;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+}
+
+.email-wrap button {
+  background-color: #302b26;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  padding: 5px 20px;
+  font-weight: 300;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.site-title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  /* width: 50%; */
+}
+
+.site-title span,
+.newsletter span {
+  max-width: 500px;
+}
+
+.site-name {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.site-links span {
+  margin-bottom: 15px;
+  margin-left: 80px;
+}
+
+.site-links__header {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+@media (max-width: 570px) {
+  footer {
+    padding: 50px 17px;
+    background-color: #eab058;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .site-links span {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 10px;
+  }
+
+  .site-title {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .right-footer {
+    align-items: flex-start;
+  }
+
+  .email-wrap {
+    align-self: flex-start;
+  }
+
+  .site-links:first-of-type {
+    margin: 0;
+  }
+
+  .links {
+    margin-top: 40px;
+  }
+}
+
+/* @media(max-width:375px){
+    
+    footer {
+        padding: 50px 17px;
+        background-color: #eab058;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'Montserrat', sans-serif;
+        height: 250px;
+        font-size: 12px;
+    }
+    .site-links span {
+        margin-bottom: 10px;
+        margin-top: 18px;
+        font-size: 12px;
+    }
+    .site-name {
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 23px;
+        margin-top: 19px;
+    }
+    .email-wrap button {
+        background-color: #000000;
+        color: #ffffff;
+        outline: none;
+        border: none;
+        padding: 6.5px 20px;
+        font-weight: 300;
+        margin-right: 17px;
+} */
