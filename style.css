@@ -189,3 +189,99 @@ footer {
         font-weight: 300;
         margin-right: 17px;
 } */
+
+
+/* Contact page Styling */
+
+.address-box{
+    display: flex;
+}
+.title{
+    color: #eab058;
+}
+.title-description{
+    font-size: 14px;
+
+}
+
+
+.box {
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+  
+    
+    
+    min-height: 200px;
+    margin: 50px auto;
+    /* margin-right: 10px; */
+    background: white;
+    border-radius: 5px;
+  }
+  
+  .contact-box{
+      margin:50px auto !important;
+      color: white;
+  }
+  .contact-box, p{
+    margin: auto;
+    color: white;
+    font-size: 15px;
+}
+
+.contact-text{
+    color: black;
+}
+.contact-facilities{
+    color: white;
+    margin: 3em;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.contact-text{
+    word-wrap: normal;
+    text-align: center;
+}
+
+.customer-care-btn{
+    background-color:  #eab058;
+}
+
+#section-contact{
+    /* background-image: url(hng-img/bar.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 300px;
+    margin:  auto;
+    padding: 10px;
+    text-align: center;
+  }
+  .contact-office{
+      margin-top: 20px;
+      color: white;
+  }
+  .card-title{
+      font-size: 12px;
+  }
+  .contact-links{
+      color: rgba(13, 84, 151, 0.842);
+      text-decoration: none;
+  }
+  
+  
